@@ -7,7 +7,9 @@ This will be a study of different NLP methods for Sentiment Analysis. We will st
 ## Outline
 
 - Data
-	- AppStore reviews
+	- AppStore reviews - Kaggle dataset
+	- Analysis and visualization
+	- Clean up
 - Text Processing
 	- Bag-of-Words
 	- ...
@@ -15,6 +17,8 @@ This will be a study of different NLP methods for Sentiment Analysis. We will st
 	- SVM
 	- XGBoost
 	- ...
+	- Transformers (?)
+- Evaluation
 - Production (?)
 
 ---

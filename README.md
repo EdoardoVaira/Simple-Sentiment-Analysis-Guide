@@ -8,12 +8,14 @@ This will be a study of different NLP methods for Sentiment Analysis. We will st
 
 - Data
 	- AppStore reviews - Kaggle dataset
-	- Analysis and visualization
+	- Analysis and Visualization
+- Text Pre-Processing
 	- Clean up
 - Text Processing
 	- Bag-of-Words
-	- ...
+	- TF-IDF
 - Models
+	- Naive Bayes
 	- SVM
 	- XGBoost
 	- ...

@@ -52,7 +52,7 @@ You can get an initial grasp of the dataset here [`data_visualization.ipynb`](da
 
 ### Text Pre-Processing
 
-The text pre-processing is done by the ['text_preprocessing.ipynb'](text_preprocessing.ipynb)
+The text pre-processing is done by the [`text_preprocessing.ipynb`](text_preprocessing.ipynb)
 
 The pre-processing goes as follows:
 - Drop the unneeded columns.
@@ -60,7 +60,7 @@ The pre-processing goes as follows:
 - Add a column with the sentiment label, according to the scores.
 - Modify the text using several techniques (turn text into lowercase, replace emojis, remove unwanted numbers, punctuations and stop words, lemmatize) to be ready for vectorization.
 
-The pre-processed Dataframe is saved in the ['preprocessed_text.csv'](preprocessed_text.csv) file.
+The pre-processed Dataframe is saved in the [`preprocessed_text.csv`](preprocessed_text.csv) file.
 
 ### From Words to Numbers
 

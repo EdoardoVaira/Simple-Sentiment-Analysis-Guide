@@ -31,6 +31,7 @@ For the entire "project" we will keep everything as simple as possible.
 	- BERT/ ROBERTA
 - How did we evaluate our model?
 - How can we put our best model into production?
+	- Like having a website. With a text box. And you get as an output the rating of the review. From 1 to 5 stars.
 
 ---
 
@@ -40,11 +41,32 @@ For the entire "project" we will keep everything as simple as possible.
 
 The dataset we will use for all these experiments is [Netflix Reviews \[DAILY UPDATED\]](https://www.kaggle.com/datasets/ashishkumarak/netflix-reviews-playstore-daily-updated/data) from [Kaggle](https://www.kaggle.com/).
 
-... Some explanation about the dataset here ...
+We have 8 columns:
+
+| Column Name            | Description                                        |
+|------------------------|----------------------------------------------------|
+| `reviewId`             | A unique identifier for each review.               |
+| `userName`             | The name of the user who submitted the review.     |
+| `content`              | The actual text of the review.                     |
+| `score`                | The rating given, ranging from 1 to 5.             |
+| `thumbsUpCount`        | The number of "thumbs up" the review received.     |
+| `reviewCreatedVersion` | __TODO__ - Details needed.                         |
+| `at`                   | The date and time the review was posted.           |
+| `appVersion`           | The version of the app used when the review was written. |
+
 
 ### Analysis and Visualization
 
 You can get an initial grasp of the dataset here [`data_visualization.ipynb`](data_visualization.ipynb)
+
+**TODO**:
+
+I think in this section we have to do this:
+
+- Cleaning Up the dataset
+	- Removing the duplicates
+	- Removing random shit we don't need (Like dropping some columns. Like "reviewId" is useless.)
+- Visualizing and understanding the dataset
 
 ---
 

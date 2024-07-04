@@ -9,20 +9,20 @@ This will be a study of different NLP methods for Sentiment Analysis. We will st
 - What kind of data did we use?
 	- Where did we get it from?
 	- How did we analyze and visualize the data?
-- How did we Pre-Process the Text?
-	- Clean up
-- Text Processing (Words -> Numbers)
-	- Bag-of-Words
-	- TF-IDF
-	- Word2Vec
-- Models
+- How did we deal with the Text?
+	- How did we pre-process the text? (Clean up)
+	- How did we turn words into numbers?
+		- Bag-of-Words
+		- TF-IDF
+		- Word2Vec
+- What kind of models did we use?
 	- Naive Bayes
 	- SVM
 	- XGBoost
 	- ...
 	- Transformers (?)
-- Evaluation
-- Production (?)
+- How did we evaluate our model?
+- How can we put our best model into production?
 
 ---
 
@@ -37,3 +37,15 @@ The dataset we will use for all these experiments is [Netflix Reviews \[DAILY UP
 ### Analysis and Visualization
 
 You can get an initial grasp of the dataset here [`data_visualization.ipynb`](data_visualization.ipynb)
+
+---
+
+## Text
+
+### Text Pre-Processing
+
+TODO
+
+### From Words to Numbers
+
+TODO

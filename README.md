@@ -46,7 +46,7 @@ You can get an initial grasp of the dataset here [`data_visualization.ipynb`](da
 
 ### Text Pre-Processing
 
-TODO
+Check this [`text_preprocessing.ipynb`](text_preprocessing.ipynb).
 
 ### From Words to Numbers
 

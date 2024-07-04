@@ -3,7 +3,7 @@
 
 This will be a study of different NLP methods for Sentiment Analysis. We will start with simple approaches and then try more complex ones.
 
-For the entire "project " we will keep everything as simple as possible.
+For the entire "project" we will keep everything as simple as possible.
 
 ---
 ## Outline

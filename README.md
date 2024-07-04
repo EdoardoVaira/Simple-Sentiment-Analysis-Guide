@@ -8,6 +8,8 @@ For the entire "project " we will keep everything as simple as possible.
 ---
 ## Outline
 
+- Why is this important?
+  	- Why people should read this thing.
 - What kind of data did we use?
 	- Where did we get it from?
 	- How did we analyze and visualize the data?

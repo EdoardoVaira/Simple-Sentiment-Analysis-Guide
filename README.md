@@ -8,6 +8,8 @@ For the entire "project " we will keep everything as simple as possible.
 ---
 ## Outline
 
+- Why is this important?
+  	- Why people should read this thing.
 - What kind of data did we use?
 	- Where did we get it from?
 	- How did we analyze and visualize the data?
@@ -50,6 +52,7 @@ You can get an initial grasp of the dataset here [`data_visualization.ipynb`](da
 
 ### Text Pre-Processing
 
+<<<<<<< HEAD
 The text pre-processing is done by the ['text_preprocessing.ipynb']
 
 The pre-processing goes as follows:
@@ -59,6 +62,9 @@ The pre-processing goes as follows:
 - Modify the text using several techniques (turn text into lowercase, replace emojis, remove unwanted numbers, punctuations and stop words, lemmatize) to be ready for vectorization.
 
 The pre-processed Dataframe is saved in the ['preprocessed_text.csv'] file.
+=======
+Check this [`text_preprocessing.ipynb`](text_preprocessing.ipynb).
+>>>>>>> 51ac9627bdfde0e02fb5de0b443c4ee8870584e1
 
 ### From Words to Numbers
 

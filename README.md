@@ -14,6 +14,7 @@ This will be a study of different NLP methods for Sentiment Analysis. We will st
 - Text Processing (Words -> Numbers)
 	- Bag-of-Words
 	- TF-IDF
+	- Word2Vec
 - Models
 	- Naive Bayes
 	- SVM
@@ -31,4 +32,4 @@ This will be a study of different NLP methods for Sentiment Analysis. We will st
 
 The dataset we will use for all these experiments is [Netflix Reviews \[DAILY UPDATED\]](https://www.kaggle.com/datasets/ashishkumarak/netflix-reviews-playstore-daily-updated/data) from [Kaggle](https://www.kaggle.com/).
 
-### Visualization
+### Analysis and Visualization

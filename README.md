@@ -17,12 +17,16 @@ For the entire "project " we will keep everything as simple as possible.
 		- Bag-of-Words
 		- TF-IDF
 		- Word2Vec
+		- GloVe
 - What kind of models did we use?
 	- Naive Bayes
 	- SVM
+	- LogisticRegression
+	- RandomForest
 	- XGBoost
-	- ...
+	- LSTM/GRU/MultiHead Attention custom model
 	- Transformers (?)
+	- BERT/ ROBERTA
 - How did we evaluate our model?
 - How can we put our best model into production?
 
@@ -46,7 +50,15 @@ You can get an initial grasp of the dataset here [`data_visualization.ipynb`](da
 
 ### Text Pre-Processing
 
-TODO
+The text pre-processing is done by the ['text_preprocessing.ipynb']
+
+The pre-processing goes as follows:
+- Drop the unneeded columns.
+- Drop missing and duplicated values.
+- Add a column with the sentiment label, according to the scores.
+- Modify the text using several techniques (turn text into lowercase, replace emojis, remove unwanted numbers, punctuations and stop words, lemmatize) to be ready for vectorization.
+
+The pre-processed Dataframe is saved in the ['preprocessed_text.csv'] file.
 
 ### From Words to Numbers
 

@@ -59,6 +59,8 @@ We have 8 columns:
 
 You can get an initial grasp of the dataset here [`data_visualization.ipynb`](data_visualization.ipynb)
 
+### Clean Up
+
 **TODO**:
 
 I think in this section we have to do this:

@@ -57,11 +57,11 @@ We have 8 columns:
 
 ### Analysis and Visualization
 
-You can get an initial grasp of the dataset here [`data_visualization.ipynb`](data_visualization.ipynb)
+You can get an initial grasp of the dataset here [`data_visualization.ipynb`](data_visualization.ipynb). This step isn't important. It's mostly if you want to get a deeper understanding of the dataset.
 
 ### Clean Up
 
-This section is just to create a cleaned up dataset. By removing the useless columns. And maybe adding some extra useful columns. And Removing the duplicates. 
+This section is just to create a cleaned up dataset. By removing the useless columns. And maybe adding some extra useful columns. And Removing the duplicates. And filling the missing values.
 
 This is done in the file [`data_cleanup.ipynb`](data_cleanup.ipynb)
 

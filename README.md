@@ -61,14 +61,11 @@ You can get an initial grasp of the dataset here [`data_visualization.ipynb`](da
 
 ### Clean Up
 
-**TODO**:
+This section is just to create a cleaned up dataset. By removing the useless columns. And maybe adding some extra useful columns. And Removing the duplicates. 
 
-I think in this section we have to do this:
+This is done in the file [`data_cleanup.ipynb`](data_cleanup.ipynb)
 
-- Cleaning Up the dataset
-	- Removing the duplicates
-	- Removing random shit we don't need (Like dropping some columns. Like "reviewId" is useless.)
-- Visualizing and understanding the dataset
+This will generate a new dataset: __bla bla bla__
 
 ---
 

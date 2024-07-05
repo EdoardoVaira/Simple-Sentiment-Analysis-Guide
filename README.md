@@ -65,7 +65,7 @@ This section is just to create a cleaned up dataset. By removing the useless col
 
 This is done in the file [`data_cleanup.ipynb`](data_cleanup.ipynb)
 
-This will generate a new dataset: __bla bla bla__
+This will generate a new dataset: [`cleaned_data.csv`](cleaned_data.csv)
 
 ---
 

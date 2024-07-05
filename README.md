@@ -6,34 +6,6 @@ This will be a study of different NLP methods for Sentiment Analysis. We will st
 For the entire "project" we will keep everything as simple as possible.
 
 ---
-## Outline
-
-- Why is this important?
-  	- Why people should read this thing.
-- What kind of data did we use?
-	- Where did we get it from?
-	- How did we analyze and visualize the data?
-- How did we deal with the Text?
-	- How did we pre-process the text? (Clean up)
-	- How did we turn words into numbers?
-		- Bag-of-Words
-		- TF-IDF
-		- Word2Vec
-		- GloVe
-- What kind of models did we use?
-	- Naive Bayes
-	- SVM
-	- LogisticRegression
-	- RandomForest
-	- XGBoost
-	- LSTM/GRU/MultiHead Attention custom model
-	- Transformers (?)
-	- BERT/ ROBERTA
-- How did we evaluate our model?
-- How can we put our best model into production?
-	- Like having a website. With a text box. And you get as an output the rating of the review. From 1 to 5 stars.
-
----
 
 ## Data
 
@@ -86,3 +58,32 @@ The pre-processed Dataframe is saved in the [`preprocessed_text.csv`](preprocess
 ### From Words to Numbers
 
 TODO
+
+---
+
+## Outline
+
+- Why is this important?
+  	- Why people should read this thing.
+- What kind of data did we use?
+	- Where did we get it from?
+	- How did we analyze and visualize the data?
+- How did we deal with the Text?
+	- How did we pre-process the text? (Clean up)
+	- How did we turn words into numbers?
+		- Bag-of-Words
+		- TF-IDF
+		- Word2Vec
+		- GloVe
+- What kind of models did we use?
+	- Naive Bayes
+	- SVM
+	- LogisticRegression
+	- RandomForest
+	- XGBoost
+	- LSTM/GRU/MultiHead Attention custom model
+	- Transformers (?)
+	- BERT/ ROBERTA
+- How did we evaluate our model?
+- How can we put our best model into production?
+	- Like having a website. With a text box. And you get as an output the rating of the review. From 1 to 5 stars.

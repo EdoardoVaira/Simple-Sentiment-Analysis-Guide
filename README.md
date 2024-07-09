@@ -4,7 +4,7 @@
 - We should use a "word cloud" somewhere.
 
 
-## Introduction 
+# Introduction 
 
 *What is this Repository?* (To Fix)
 
@@ -18,9 +18,9 @@ This repository explores various NLP techniques for sentiment analysis of review
 - Easy to understand
 - Fast to learn
 
-## Data
+# Data
 
-### Dataset
+## Dataset
 
 The dataset we will use for all these experiments is [Netflix Reviews \[DAILY UPDATED\]](https://www.kaggle.com/datasets/ashishkumarak/netflix-reviews-playstore-daily-updated/data) from [Kaggle](https://www.kaggle.com/).
 
@@ -38,11 +38,11 @@ The dataset consists of 8 columns:
 | `appVersion`           | The version of the app used when the review was written. |
 
 
-### Analysis and Visualization
+## Analysis and Visualization
 
-You can get an initial grasp of the dataset here [`data_visualization.ipynb`](data_visualization.ipynb). This step isn't important. It's mostly if you want to get a deeper understanding of the dataset.
+You can get an initial grasp of the dataset here [`data_visualization.ipynb`](data_visualization.ipynb). This step isn't important. But if you want a deeper understanding of the dataset, you can look into it.
 
-### Clean Up
+## Clean Up
 
 This section is just to create a cleaned up dataset. By removing the useless columns. And maybe adding some extra useful columns. And Removing the duplicates. And filling the missing values.
 
@@ -50,9 +50,9 @@ This is done in the file [`data_cleanup.ipynb`](data_cleanup.ipynb)
 
 This will generate a new dataset: [`cleaned_data.csv`](cleaned_data.csv)
 
-## Text
+# Text
 
-### Text Pre-Processing
+## Text Pre-Processing
 
 The text pre-processing is done by the [`text_preprocessing.ipynb`](text_preprocessing.ipynb)
 
@@ -62,11 +62,11 @@ The pre-processing goes as follows:
 
 The pre-processed Dataframe is saved in the [`preprocessed_text.csv`](preprocessed_text.csv) file.
 
-### From Words to Numbers
+## From Words to Numbers
 
 TODO
 
-## Outline
+# Outline
 
 - Why is this important?
   	- Why people should read this thing.

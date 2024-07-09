@@ -44,11 +44,9 @@ You can get an initial grasp of the dataset here [`data_visualization.ipynb`](da
 
 ## Clean Up
 
-This section is just to create a cleaned up dataset. By removing the useless columns. And maybe adding some extra useful columns. And Removing the duplicates. And filling the missing values.
+This section details the steps taken to prepare a cleaned dataset. We start by removing unnecessary columns to simplify the dataset. Next, we eliminate duplicate rows and drop any rows with missing values. We also add a new column to categorize the sentiment of each review. You can see all of these steps in [`data_cleanup.ipynb`](data_cleanup.ipynb).
 
-This is done in the file [`data_cleanup.ipynb`](data_cleanup.ipynb)
-
-This will generate a new dataset: [`cleaned_data.csv`](cleaned_data.csv)
+The cleaned dataset is saved as [`cleaned_data.csv`](cleaned_data.csv).
 
 # Text
 

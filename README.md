@@ -66,6 +66,10 @@ The pre-processed Dataframe is saved in the [`preprocessed_text.csv`](preprocess
 
 TODO
 
+# Picking a Model
+
+At this point we have different ways to deal with the text (BoW - GloVe - Word2Vec ...) and many different models we can pick. So we have a lot of possible combinations. I guess we can just show some of them.
+
 # Outline
 
 - Why is this important?

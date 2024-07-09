@@ -2,7 +2,7 @@
 
 - Understand what the `reviewCreatedVersion` in the dataset means.
 - We should use a "word cloud" somewhere.
-
+- Is saying 1, 2 -> negative / 3 -> neutral / 4, 5 -> positive the best way to handle this?  
 
 # Introduction 
 

@@ -5,6 +5,8 @@ This will be a study of different NLP methods for Sentiment Analysis. We will st
 
 For the entire "project" we will keep everything as simple as possible.
 
+Test
+
 ---
 
 ## Data

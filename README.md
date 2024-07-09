@@ -1,13 +1,17 @@
 
 ## Introduction 
 
-This will be a study of different NLP methods for Sentiment Analysis. We will start with simple approaches and then try more complex ones.
+*What is this Repository?* (To Fix)
 
-For the entire "project" we will keep everything as simple as possible.
+This repository explores various NLP techniques for sentiment analysis of reviews on the Netflix app in the App Store.
 
-Test
+*Why is this important and how can this be valuable to you?* (To Fix)
 
----
+- It will give you a basic understanding of Sentiment Analysis
+- You will see the pros/cons of different techniques
+- It will be simple
+- Easy to understand
+- Fast to learn
 
 ## Data
 
@@ -15,7 +19,7 @@ Test
 
 The dataset we will use for all these experiments is [Netflix Reviews \[DAILY UPDATED\]](https://www.kaggle.com/datasets/ashishkumarak/netflix-reviews-playstore-daily-updated/data) from [Kaggle](https://www.kaggle.com/).
 
-We have 8 columns:
+The dataset consists of 8 columns:
 
 | Column Name            | Description                                        |
 |------------------------|----------------------------------------------------|
@@ -41,8 +45,6 @@ This is done in the file [`data_cleanup.ipynb`](data_cleanup.ipynb)
 
 This will generate a new dataset: [`cleaned_data.csv`](cleaned_data.csv)
 
----
-
 ## Text
 
 ### Text Pre-Processing
@@ -58,8 +60,6 @@ The pre-processed Dataframe is saved in the [`preprocessed_text.csv`](preprocess
 ### From Words to Numbers
 
 TODO
-
----
 
 ## Outline
 

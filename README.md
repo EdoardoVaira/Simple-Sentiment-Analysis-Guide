@@ -50,6 +50,8 @@ The cleaned dataset is saved as [`cleaned_data.csv`](cleaned_data.csv).
 
 # Text
 
+At this point we are ready for handling the content of the review... *TODO*
+
 ## Text Pre-Processing
 
 The text pre-processing is done by the [`text_preprocessing.ipynb`](text_preprocessing.ipynb)

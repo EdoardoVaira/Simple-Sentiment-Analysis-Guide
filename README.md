@@ -1,14 +1,12 @@
 **TODO**:
 
-- Understand what the `reviewCreatedVersion` in the dataset means.
-- We should use a "word cloud" somewhere.
-- Is saying 1, 2 -> negative / 3 -> neutral / 4, 5 -> positive the best way to handle this?  
+- Understand what the `reviewCreatedVersion` in the dataset means. -> the app version when the review was made.
 
 # Introduction 
 
 *What is this Repository?* (To Fix)
 
-This repository explores various NLP techniques for sentiment analysis of reviews on the Netflix app in the App Store.
+This repository explores various NLP techniques for sentiment analysis of reviews on the Netflix app in the Google Play Store. It offers a detailed, yet easy to follow guide on sentiment analysis starting from basic Exploratory Data Analysis (EDA) and proceeding to text pre-processing and machine learning model training and evaluation. The pros and cons of different text pre-processing techniques, as well as a performance comparisson between them, are presented. Finally, various machine learning methods are explored, from standard ML algorithms, such as Logistic Regression, to more advanced ones, like RNNs and Transformers.
 
 *Why is this important and how can this be valuable to you?* (To Fix)
 
@@ -33,14 +31,14 @@ The dataset consists of 8 columns:
 | `content`              | The actual text of the review.                     |
 | `score`                | The rating given, ranging from 1 to 5.             |
 | `thumbsUpCount`        | The number of "thumbs up" the review received.     |
-| `reviewCreatedVersion` | __TODO__ - Details needed.                         |
+| `reviewCreatedVersion` | The version of the app used when the review was written. |
 | `at`                   | The date and time the review was posted.           |
 | `appVersion`           | The version of the app used when the review was written. |
 
 
 ## Analysis and Visualization
 
-You can get an initial grasp of the dataset here [`data_visualization.ipynb`](data_visualization.ipynb). This step isn't important. But if you want a deeper understanding of the dataset, you can look into it.
+You can get an initial grasp of the dataset here [`data_visualization.ipynb`](data_visualization.ipynb). This step isn't important. But if you want a deeper understanding of the dataset, you can look into it. It performs some basic Exploratory Data Analysis (EDA) and gives insights on the dataset.
 
 ## Clean Up
 
@@ -50,25 +48,33 @@ The cleaned dataset is saved as [`cleaned_data.csv`](cleaned_data.csv).
 
 # Text
 
-At this point we are ready for handling the content of the review... *TODO*
+At this point we are ready for handling the content of the review. In order to feed the text sequences to our models, several steps need to be taken. Firstly, some text pre-processing is needed to clean up the texts and make them as simple as possible. Then, the text sequences need to be vectorized from words into numbers, so our models can understand them and train on them.
 
 ## Text Pre-Processing
 
-The text pre-processing is done by the [`text_preprocessing.ipynb`](text_preprocessing.ipynb)
+The text pre-processing is done in the [`text_preprocessing.ipynb`](text_preprocessing.ipynb).
 
 The pre-processing goes as follows:
 - Load the cleaned dataset.
-- Modify the text using several techniques (turn text into lowercase, replace emojis, remove unwanted numbers, punctuations and stop words, lemmatize) to be ready for vectorization.
+- Modify the text using several techniques (turn text into lowercase, replace emojis, fix contractions, remove unwanted numbers, punctuations and symbols, lemmatize) to be ready for vectorization.
 
 The pre-processed Dataframe is saved in the [`preprocessed_text.csv`](preprocessed_text.csv) file.
 
 ## From Words to Numbers
 
-TODO
+The text vectorization is done in the [`text_vectorizing.ipynb`](text_vectorizing.ipynb).
+
+The vectorization methods explored are the following:
+- BoW (Bag of Words)
+- TF-IDF (Term Frequency - Inverse Document Frequency)
+- Word2Vec (Word 2 Vector)
+- GloVe (Global Vectors)
+
+They are extensively analyzed in the notebook. We decided not to save them in a seperate Dataframe, since the resulting size was 1.5 GB. Instead we run the necessary code again when training our models, as the vectorizing process is quite fast. Later when we evaluate our models, we will also compare how the different techniques perform for each model.
 
 # Picking a Model
 
-At this point we have different ways to deal with the text (BoW - GloVe - Word2Vec ...) and many different models we can pick. So we have a lot of possible combinations. I guess we can just show some of them.
+At this point we have different ways to deal with the text vectorization and many different models we can pick. So we have a lot of possible combinations. I guess we can just show some of them.
 
 # Outline
 

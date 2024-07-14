@@ -63,7 +63,7 @@ The pre-processed Dataframe is saved in the [`preprocessed_text.csv`](preprocess
 ## From Words to Numbers
 
 The vectorization methods explored are the following:
-- BoW (Bag of Words): [`aaa.csv`](bbb.csv)
+- BoW (Bag of Words): [`bagofwords.ipynb`](TEXT/bagofwords.ipynb)
 - TF-IDF (Term Frequency - Inverse Document Frequency)
 - Word2Vec (Word 2 Vector)
 - GloVe (Global Vectors)

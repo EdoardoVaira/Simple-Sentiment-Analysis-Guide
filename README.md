@@ -15,6 +15,8 @@ This repository explores various NLP techniques for sentiment analysis of review
 - Time Delay: 
 - Effort and Sacrifices: 
 
+*Idea*: If you are "avatar" then this repository is for you. We will do X,Y,Z in a easy and simple way from beginning to end.
+
 # Data
 
 ## Dataset
@@ -42,9 +44,9 @@ You can get an initial grasp of the dataset here: [`data_visualization.ipynb`](D
 
 ## Clean Up
 
-This section outlines the steps to prepare a cleaned dataset. First, we remove unnecessary columns to simplify the dataset. Then, we drop duplicate rows and any rows with missing values. We also add a new column to categorize the sentiment of each review. You can view all these steps in [`data_cleanup.ipynb`](DATA/data_cleanup.ipynb).
+This section outlines the steps to prepare a cleaned dataset. First, we remove unnecessary columns to simplify the dataset. Then, we drop duplicate rows and any rows with missing values. We also add a new column to categorize the sentiment of each review. You can view all these steps in: [`data_cleanup.ipynb`](DATA/data_cleanup.ipynb).
 
-Then we save the cleaned dataset as [`cleaned_data.csv`](DATA/cleaned_data.csv).
+Then we save the cleaned dataset as: [`cleaned_data.csv`](DATA/cleaned_data.csv).
 
 # Text
 
@@ -55,20 +57,18 @@ At this point, we need to deal with the `content` of the review. This is because
 The text pre-processing is done in: [`text_preprocessing.ipynb`](TEXT/text_preprocessing.ipynb).
 
 The pre-processing goes as follows:
-- We load the cleaned dataset [`cleaned_data.csv`](DATA/cleaned_data.csv).
+- We load the cleaned dataset: [`cleaned_data.csv`](DATA/cleaned_data.csv).
 - We clean up the text using several techniques (turn the text into lowercase, replace emojis, remove repeated characters) to be ready for vectorization.
 
 The pre-processed dataset is saved as: [`preprocessed_text.csv`](DATASETS/preprocessed_text.csv) file.
 
-## From Words to Numbers
+## Text Vectorization
 
-The vectorization methods explored are the following:
+There are many vectorization methods. The one we explored in this repository are:
 - BoW (Bag of Words): [`bagofwords.ipynb`](TEXT/bagofwords.ipynb)
 - TF-IDF (Term Frequency - Inverse Document Frequency)
 - Word2Vec (Word 2 Vector)
 - GloVe (Global Vectors)
-
-They are extensively analyzed in the notebook. We decided not to save them in a seperate Dataframe, since the resulting size was 1.5 GB. Instead we run the necessary code again when training our models, as the vectorizing process is quite fast. Later when we evaluate our models, we will also compare how the different techniques perform for each model.
 
 # Picking a Model
 

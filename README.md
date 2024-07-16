@@ -1,5 +1,7 @@
 **TODO**:
 
+- Wanna clean up the DATA section before continuing 
+
 # Introduction 
 
 *What is this Repository?* (To Fix)

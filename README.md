@@ -60,15 +60,17 @@ The pre-processing goes as follows:
 - We load the cleaned dataset: [`cleaned_data.csv`](DATA/cleaned_data.csv).
 - We clean up the text using several techniques (turn the text into lowercase, replace emojis, remove repeated characters) to be ready for vectorization.
 
-The pre-processed dataset is saved as: [`preprocessed_text.csv`](DATASETS/preprocessed_text.csv) file.
+The pre-processed dataset is saved as: [`preprocessed_text.csv`](DATASETS/preprocessed_text.csv).
 
 ## Text Vectorization
 
-There are many vectorization methods. The one we explored in this repository are:
+At this point we are ready for turning our words into numbers. There are many ways to do so. The one we explored in this repository are:
 - BoW (Bag of Words): [`bagofwords.ipynb`](TEXT/bagofwords.ipynb)
 - TF-IDF (Term Frequency - Inverse Document Frequency)
 - Word2Vec (Word 2 Vector)
 - GloVe (Global Vectors)
+
+We will give you some general guidelines for which one to pick, and the pros and cons of each one.
 
 # Picking a Model
 

@@ -8,11 +8,12 @@ This repository explores various NLP techniques for sentiment analysis of review
 
 *Why is this important and how can this be valuable to you?* (To Fix)
 
-- It will give you a basic understanding of Sentiment Analysis
-- You will see the pros/cons of different techniques
-- It will be simple
-- Easy to understand
-- Fast to learn
+- Avatar: Someone that has no idea about NLP and Sentiment Analysis. 
+
+- Dream Outcome: 
+- Perceived Likelihood of Achivement: 
+- Time Delay: 
+- Effort and Sacrifices: 
 
 # Data
 
@@ -47,17 +48,17 @@ Then we save the cleaned dataset as [`cleaned_data.csv`](DATA/cleaned_data.csv).
 
 # Text
 
-At this point we are ready for handling the content of the review. In order to feed the text sequences to our models, several steps need to be taken. Firstly, some text pre-processing is needed to clean up the texts and make them as simple as possible. Then, the text sequences need to be vectorized from words into numbers, so our models can understand them and train on them.
+At this point, we need to deal with the `content` of the review. This is because it often contains unwanted characters. Such as punctuation, emojis, and characters repeated many times. To address this, we first pre-process the text to clean it up. Then, we convert the words into numbers through a process called text vectorization. This is because our models operate with numerical data, not text.
 
 ## Text Pre-Processing
 
-The text pre-processing is done in the [`text_preprocessing.ipynb`](text_preprocessing.ipynb).
+The text pre-processing is done in: [`text_preprocessing.ipynb`](TEXT/text_preprocessing.ipynb).
 
 The pre-processing goes as follows:
-- Load the cleaned dataset.
-- Modify the text using several techniques (turn text into lowercase, replace emojis, fix contractions, remove unwanted numbers, punctuations and symbols, lemmatize) to be ready for vectorization.
+- We load the cleaned dataset [`cleaned_data.csv`](DATA/cleaned_data.csv).
+- We clean up the text using several techniques (turn the text into lowercase, replace emojis, remove repeated characters) to be ready for vectorization.
 
-The pre-processed Dataframe is saved in the [`preprocessed_text.csv`](preprocessed_text.csv) file.
+The pre-processed dataset is saved as: [`preprocessed_text.csv`](DATASETS/preprocessed_text.csv) file.
 
 ## From Words to Numbers
 
@@ -72,6 +73,8 @@ They are extensively analyzed in the notebook. We decided not to save them in a 
 # Picking a Model
 
 At this point we have different ways to deal with the text vectorization and many different models we can pick. So we have a lot of possible combinations. I guess we can just show some of them.
+
+TODO
 
 # Outline
 

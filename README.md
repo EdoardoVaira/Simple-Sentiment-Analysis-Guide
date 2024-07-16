@@ -50,7 +50,7 @@ Then we save the cleaned dataset as: [`cleaned_data.csv`](DATA/cleaned_data.csv)
 
 # Text
 
-At this point, we need to deal with the `content` of the review. This is because it often contains unwanted characters. Such as punctuation, emojis, and characters repeated many times. To address this, we first pre-process the text to clean it up. Then, we convert the words into numbers through a process called text vectorization. This is because our models operate with numerical data, not text.
+At this point, we need to deal with the `content` of the review. This is because it often contains unwanted characters, such as punctuation, emojis, and characters repeated many times. To address this, we first pre-process the text to clean it up. Then, we convert the words into numbers through a process called text vectorization. This is because our models operate with numerical data, not text.
 
 ## Text Pre-Processing
 
@@ -64,7 +64,7 @@ The pre-processed dataset is saved as: [`preprocessed_text.csv`](DATASETS/prepro
 
 ## Text Vectorization
 
-There are many vectorization methods. The one we explored in this repository are:
+There are many vectorization methods. The ones we explored in this repository are:
 - BoW (Bag of Words): [`bagofwords.ipynb`](TEXT/bagofwords.ipynb)
 - TF-IDF (Term Frequency - Inverse Document Frequency)
 - Word2Vec (Word 2 Vector)

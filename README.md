@@ -1,7 +1,5 @@
 **TODO**:
 
-- Understand what the `reviewCreatedVersion` in the dataset means. -> the app version when the review was made.
-
 # Introduction 
 
 *What is this Repository?* (To Fix)
@@ -20,7 +18,7 @@ This repository explores various NLP techniques for sentiment analysis of review
 
 ## Dataset
 
-The dataset we will use for all these experiments is [Netflix Reviews \[DAILY UPDATED\]](https://www.kaggle.com/datasets/ashishkumarak/netflix-reviews-playstore-daily-updated/data) from [Kaggle](https://www.kaggle.com/).
+The dataset we will use is [`netflix_reviews.csv`](DATASETS/netflix_reviews.ipynb) from [Kaggle](https://www.kaggle.com/datasets/ashishkumarak/netflix-reviews-playstore-daily-updated/data). It contains reviews for the Netflix App in the Google Play Store.
 
 The dataset consists of 8 columns:
 
@@ -35,16 +33,17 @@ The dataset consists of 8 columns:
 | `at`                   | The date and time the review was posted.           |
 | `appVersion`           | The version of the app used when the review was written. |
 
+For our analysis, we will focus on two aspects of the reviews. The `content` will be the input for our models, and the `score` will be the output.
 
 ## Analysis and Visualization
 
-You can get an initial grasp of the dataset here [`data_visualization.ipynb`](data_visualization.ipynb). This step isn't important. But if you want a deeper understanding of the dataset, you can look into it. It performs some basic Exploratory Data Analysis (EDA) and gives insights on the dataset.
+You can get an initial grasp of the dataset here: [`data_visualization.ipynb`](DATA/data_visualization.ipynb). Where we will perform some data analysis and visualization. This step isn't important, but if you want a deeper understanding of the dataset, you can look into it.
 
 ## Clean Up
 
-This section details the steps taken to prepare a cleaned dataset. We start by removing unnecessary columns to simplify the dataset. Next, we eliminate duplicate rows and drop any rows with missing values. We also add a new column to categorize the sentiment of each review. You can see all of these steps in [`data_cleanup.ipynb`](data_cleanup.ipynb).
+This section outlines the steps to prepare a cleaned dataset. First, we remove unnecessary columns to simplify the dataset. Then, we drop duplicate rows and any rows with missing values. We also add a new column to categorize the sentiment of each review. You can view all these steps in [`data_cleanup.ipynb`](DATA/data_cleanup.ipynb).
 
-The cleaned dataset is saved as [`cleaned_data.csv`](cleaned_data.csv).
+Then we save the cleaned dataset as [`cleaned_data.csv`](DATA/cleaned_data.csv).
 
 # Text
 

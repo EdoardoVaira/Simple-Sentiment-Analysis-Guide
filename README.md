@@ -64,11 +64,7 @@ The pre-processed dataset is saved as: [`preprocessed_text.csv`](DATASETS/prepro
 
 ## Text Vectorization
 
-<<<<<<< HEAD
 At this point we are ready for turning our words into numbers. There are many ways to do so. The one we explored in this repository are:
-=======
-There are many vectorization methods. The ones we explored in this repository are:
->>>>>>> 0853f229ace726bd66a844b1410481bf0591b45c
 - BoW (Bag of Words): [`bagofwords.ipynb`](TEXT/bagofwords.ipynb)
 - TF-IDF (Term Frequency - Inverse Document Frequency)
 - Word2Vec (Word 2 Vector)

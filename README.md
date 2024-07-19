@@ -1,23 +1,13 @@
 **TODO**:
 
-- Wanna clean up the DATA section before continuing 
+- data_visualization is now perfect.
+- data_cleanup can be improved a bit. 
 
 # Introduction 
 
-*What is this Repository?* (To Fix)
+If you are someone that wants to learn about NLP and Sentiment Analysis, this repository is for you. We will do X,Y,Z in a easy and simple way from beginning to end... {This could be the title instead of "Introduction"}
 
 This repository explores various NLP techniques for sentiment analysis of reviews on the Netflix app in the Google Play Store. It offers a detailed, yet easy to follow guide on sentiment analysis starting from basic Exploratory Data Analysis (EDA) and proceeding to text pre-processing and machine learning model training and evaluation. The pros and cons of different text pre-processing techniques, as well as a performance comparisson between them, are presented. Finally, various machine learning methods are explored, from standard ML algorithms, such as Logistic Regression, to more advanced ones, like RNNs and Transformers.
-
-*Why is this important and how can this be valuable to you?* (To Fix)
-
-- Avatar: Someone that has no idea about NLP and Sentiment Analysis. 
-
-- Dream Outcome: 
-- Perceived Likelihood of Achivement: 
-- Time Delay: 
-- Effort and Sacrifices: 
-
-*Idea*: If you are "avatar" then this repository is for you. We will do X,Y,Z in a easy and simple way from beginning to end.
 
 # Data
 
@@ -46,9 +36,9 @@ You can get an initial grasp of the dataset here: [`data_visualization.ipynb`](D
 
 ## Clean Up
 
-This section outlines the steps to prepare a cleaned dataset. First, we remove unnecessary columns to simplify the dataset. Then, we drop duplicate rows and any rows with missing values. We also add a new column to categorize the sentiment of each review. You can view all these steps in: [`data_cleanup.ipynb`](DATA/data_cleanup.ipynb).
+This section outlines the steps to prepare a cleaned dataset. First, we remove unnecessary columns to simplify the dataset. Then, we drop duplicate rows and any rows with missing values. You can view all these steps in: [`data_cleanup.ipynb`](DATA/data_cleanup.ipynb).
 
-Then we save the cleaned dataset as: [`cleaned_data.csv`](DATA/cleaned_data.csv).
+Then we save the cleaned dataset as: [`cleaned_data.csv`](DATASETS/cleaned_data.csv).
 
 # Text
 

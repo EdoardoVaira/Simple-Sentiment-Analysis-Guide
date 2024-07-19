@@ -2,6 +2,7 @@
 
 - data_visualization is now perfect.
 - data_cleanup can be improved a bit. 
+- next comes text preprocessing
 
 # Introduction 
 

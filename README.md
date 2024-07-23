@@ -1,7 +1,6 @@
 **TODO**:
 
-- data_visualization is now perfect.
-- data_cleanup can be improved a bit. 
+- The data section is finished
 - next comes text preprocessing
 
 # Introduction 

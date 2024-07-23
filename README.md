@@ -10,6 +10,9 @@ If you are someone that wants to learn about NLP and Sentiment Analysis, this re
 
 This repository explores various NLP techniques for sentiment analysis of reviews on the Netflix app in the Google Play Store. It offers a detailed, yet easy to follow guide on sentiment analysis starting from basic Exploratory Data Analysis (EDA) and proceeding to text pre-processing and machine learning model training and evaluation. The pros and cons of different text pre-processing techniques, as well as a performance comparisson between them, are presented. Finally, various machine learning methods are explored, from standard ML algorithms, such as Logistic Regression, to more advanced ones, like RNNs and Transformers.
 
+
+![Sentiment_Analysis](https://miro.medium.com/v2/1*_JW1JaMpK_fVGld8pd1_JQ.gif)
+
 # Data
 
 ## Dataset

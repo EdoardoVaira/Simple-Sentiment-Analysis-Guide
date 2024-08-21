@@ -31,7 +31,6 @@ The dataset consists of 8 columns:
 | `at`                   | The date and time the review was posted.           |
 | `appVersion`           | The version of the app used when the review was written. |
 
-For our analysis, we will focus on two aspects of the reviews. The `content` will be the input for our models, and the `score` will be the output.
 For our analysis we will focus on two aspects of the reviews. The `content` will be the input to our models and the `score` will be the output.
 
 ## Analysis and Visualization
@@ -40,13 +39,13 @@ You can get an initial grasp of the dataset here: [`data_visualization.ipynb`](D
 
 ## Clean Up
 
-This section outlines the steps to prepare a cleaned dataset. First, we remove unnecessary columns to simplify the dataset. Then, we drop duplicate rows and any rows with missing values. You can view all these steps in: [`data_cleanup.ipynb`](DATA/data_cleanup.ipynb).
+This section outlines the steps to prepare a cleaned dataset. First, we remove unnecessary columns to simplify the dataset. Then, we drop duplicate rows and any rows with missing values. You can see all these steps in: [`data_cleanup.ipynb`](DATA/data_cleanup.ipynb).
 
-Then we save the cleaned dataset as: [`cleaned_data.csv`](DATASETS/cleaned_data.csv).
+We then save the cleaned up dataset as: [`cleaned_data.csv`](DATASETS/cleaned_data.csv).
 
 # Text
 
-At this point, we need to deal with the `content` of the review. This is because it often contains unwanted characters, such as punctuation, emojis, and characters repeated many times. To address this, we first pre-process the text to clean it up. Then, we convert the words into numbers through a process called text vectorization. This is because our models operate with numerical data, not text.
+At this point, we need to deal with the `content` of the review. This is because it often contains unwanted characters, such as punctuation, emojis, and characters repeated many times. To address this, we first **pre-process** the text to clean it up. We then convert the words into numbers through a process called text **vectorisation**. This is because our models work with numerical data, not text.
 
 ## Text Pre-Processing
 
@@ -60,13 +59,13 @@ The pre-processed dataset is saved as: [`preprocessed_text.csv`](DATASETS/prepro
 
 ## Text Vectorization
 
-At this point we are ready for turning our words into numbers. There are many ways to do so. The one we explored in this repository are:
+At this point, we are ready to turn our words into numbers. There are many ways to do this. The ones we have explored in this repository are:
 - BoW (Bag of Words): [`bagofwords.ipynb`](TEXT/bagofwords.ipynb)
 - TF-IDF (Term Frequency - Inverse Document Frequency): [`tfidf.ipynb`](TEXT/tfidf.ipynb)
 - Word2Vec (Word 2 Vector)
 - GloVe (Global Vectors)
 
-We will give you some general guidelines for which one to pick, and the pros and cons of each one.
+We will give you some general guidelines on which one to choose, and the pros and cons of each.
 
 # Picking a Model
 

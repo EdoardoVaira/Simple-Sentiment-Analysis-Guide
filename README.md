@@ -24,8 +24,8 @@ The dataset consists of 8 columns:
 |------------------------|----------------------------------------------------|
 | `reviewId`             | A unique identifier for each review.               |
 | `userName`             | The name of the user who submitted the review.     |
-| *`content`*              | The actual text of the review.                     |
-| *`score`*                | The rating given, ranging from 1 to 5.             |
+| **`content`**              | The actual text of the review.                     |
+| **`score`**                | The rating given, ranging from 1 to 5.             |
 | `thumbsUpCount`        | The number of "thumbs up" the review received.     |
 | `reviewCreatedVersion` | The version of the app used when the review was written. |
 | `at`                   | The date and time the review was posted.           |

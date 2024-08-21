@@ -3,12 +3,13 @@
 - The data section is finished
 - next comes text preprocessing
 
-# Introduction 
+# Mastering Sentiment-Analysis: A Step-by-Step Guide 
 
-If you are someone that wants to learn about NLP and Sentiment Analysis, this repository is for you. We will do X,Y,Z in a easy and simple way from beginning to end... {This could be the title instead of "Introduction"}
+Ready to learn about Natural Language Processing (NLP) and Sentiment Analysis? This repository is perfect for you. We'll walk you through the whole process, from understanding your data to setting up a sentiment analysis model, in a simple and straightforward way.
 
-This repository explores various NLP techniques for sentiment analysis of reviews on the Netflix app in the Google Play Store. It offers a detailed, yet easy to follow guide on sentiment analysis starting from basic Exploratory Data Analysis (EDA) and proceeding to text pre-processing and machine learning model training and evaluation. The pros and cons of different text pre-processing techniques, as well as a performance comparisson between them, are presented. Finally, various machine learning methods are explored, from standard ML algorithms, such as Logistic Regression, to more advanced ones, like RNNs and Transformers.
+We'll start with some basic data exploration using user reviews of the Netflix app from the Google Play Store. Then, we'll move on to text pre-processing. You'll learn how to clean and prepare text data, explore different text vectorization methods, and compare various machine learning models—from logistic regression to advanced transformers.
 
+By the end, you'll not only understand sentiment analysis but also know how to build and deploy your own models. Whether you're new to NLP or looking to brush up on your skills, this guide will help you master sentiment analysis with ease.
 
 ![Sentiment_Analysis](https://miro.medium.com/v2/1*_JW1JaMpK_fVGld8pd1_JQ.gif)
 
@@ -39,7 +40,9 @@ You can get an initial grasp of the dataset here: [`data_visualization.ipynb`](D
 
 ## Clean Up
 
-This section outlines the steps to prepare a cleaned dataset. First, we remove unnecessary columns to simplify the dataset. Then, we drop duplicate rows and any rows with missing values. You can see all these steps in: [`data_cleanup.ipynb`](DATA/data_cleanup.ipynb).
+This section outlines the steps to prepare a cleaned dataset. First, we remove unnecessary columns to simplify the dataset. Then, we drop duplicate rows and any rows with missing values. In addition, we categorize the ratings by transforming the score column. In this step, we convert ratings of 4 and 5 stars to "positive," 3 stars to "neutral," and 1 and 2 stars to "negative."
+
+You can see all these steps in: [`data_cleanup.ipynb`](DATA/data_cleanup.ipynb).
 
 We then save the cleaned up dataset as: [`cleaned_data.csv`](DATASETS/cleaned_data.csv).
 

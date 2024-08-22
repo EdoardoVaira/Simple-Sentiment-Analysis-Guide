@@ -32,38 +32,25 @@
             border: 1px solid #ddd;
             border-radius: 4px;
             margin-bottom: 10px;
-            box-sizing: border-box;
-            resize: vertical;
+            font-size: 16px;
         }
         button {
-            background-color: #007bff;
-            color: white;
-            border: none;
             padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
             border-radius: 4px;
             cursor: pointer;
-            font-size: 16px;
+            transition: background-color 0.3s ease;
         }
         button:hover {
             background-color: #0056b3;
         }
-        .slider {
-            width: 100%;
-            height: 20px;
-            border-radius: 10px;
-            background: linear-gradient(to right, #ff4d4d, #4dff4d);
-            position: relative;
+        .stars {
             margin-top: 20px;
-            border: 1px solid #ddd;
-        }
-        .slider-bar {
-            height: 100%;
-            border-radius: 10px;
-            background: green;
-            position: absolute;
-            top: 0;
-            left: 0;
-            transition: width 0.3s ease;
+            font-size: 30px;
+            color: #ffd700;
         }
         .result {
             margin-top: 20px;
@@ -81,11 +68,9 @@
         <h1>Sentiment Analysis</h1>
         <textarea id="textInput" placeholder="Enter text here..."></textarea><br>
         <button onclick="analyzeText()">Analyze</button>
-        <div class="slider">
-            <div id="sliderBar" class="slider-bar"></div>
-        </div>
+        <div id="stars" class="stars">☆☆☆☆☆</div>
         <div id="result" class="result">Sentiment: <span id="sentimentText">None</span></div>
-        <div class="label" id="sentimentLabel">Adjusting...</div>
+        <div class="label" id="sentimentLabel">Waiting for input...</div>
     </div>
 
     <script>
@@ -99,35 +84,33 @@
             .then(response => response.json())
             .then(data => {
                 const sentiment = data.sentiment;
-                updateSlider(sentiment);
+                updateStars(sentiment);
             });
         }
 
-        function updateSlider(sentiment) {
-            const sliderBar = document.getElementById('sliderBar');
+        function updateStars(sentiment) {
+            const starsElement = document.getElementById('stars');
             const sentimentText = document.getElementById('sentimentText');
             const sentimentLabel = document.getElementById('sentimentLabel');
-            
-            let widthPercentage = 50; // Neutral by default
-            let color = 'green';
+
+            let starRating = 3; // Neutral by default
+            let sentimentDescription = 'Neutral sentiment.';
 
             if (sentiment === 'positive') {
-                widthPercentage = 75;
-                color = 'lightgreen';
+                starRating = 5;
+                sentimentDescription = 'Feeling great!';
                 sentimentText.textContent = 'Positive';
-                sentimentLabel.textContent = 'Feeling good!';
             } else if (sentiment === 'negative') {
-                widthPercentage = 25;
-                color = 'lightcoral';
+                starRating = 1;
+                sentimentDescription = 'Feeling down!';
                 sentimentText.textContent = 'Negative';
-                sentimentLabel.textContent = 'Feeling down!';
             } else {
+                starRating = 3;
                 sentimentText.textContent = 'Neutral';
-                sentimentLabel.textContent = 'Neutral sentiment.';
             }
 
-            sliderBar.style.width = `${widthPercentage}%`;
-            sliderBar.style.background = color;
+            starsElement.innerHTML = '★'.repeat(starRating) + '☆'.repeat(5 - starRating);
+            sentimentLabel.textContent = sentimentDescription;
         }
     </script>
 </body>

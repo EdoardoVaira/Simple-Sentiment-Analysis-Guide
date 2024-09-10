@@ -48,7 +48,7 @@ You can get an initial grasp of the dataset here: [`data_visualization.ipynb`](D
 
 ## Clean Up
 
-This section outlines the steps to prepare a cleaned dataset. First, we remove unnecessary columns to simplify the dataset. Then, we drop duplicate rows and any rows with missing values. In addition, we categorize the ratings by transforming the score column. In this step, we convert ratings of 4 and 5 stars to "positive," 3 stars to "neutral," and 1 and 2 stars to "negative."
+This section outlines the steps to prepare a cleaned dataset. First, we remove unnecessary columns to simplify the dataset. Then, we drop duplicate rows and any rows with missing values.
 
 You can see all these steps in: [`data_cleanup.ipynb`](DATA/data_cleanup.ipynb).
 

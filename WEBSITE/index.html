@@ -47,19 +47,9 @@
         button:hover {
             background-color: #0056b3;
         }
-        .stars {
-            margin-top: 20px;
-            font-size: 30px;
-            color: #ffd700;
-        }
         .result {
             margin-top: 20px;
-            font-size: 18px;
-        }
-        .label {
-            margin-top: 10px;
-            font-size: 14px;
-            color: #555;
+            font-size: 24px;
         }
     </style>
 </head>
@@ -68,9 +58,7 @@
         <h1>Sentiment Analysis</h1>
         <textarea id="textInput" placeholder="Enter text here..."></textarea><br>
         <button onclick="analyzeText()">Analyze</button>
-        <div id="stars" class="stars">☆☆☆☆☆</div>
-        <div id="result" class="result">Sentiment: <span id="sentimentText">None</span></div>
-        <div class="label" id="sentimentLabel">Waiting for input...</div>
+        <div id="result" class="result">Score: <span id="scoreText">0</span></div>
     </div>
 
     <script>
@@ -83,36 +71,10 @@
             })
             .then(response => response.json())
             .then(data => {
-                const sentiment = data.sentiment;
-                updateStars(sentiment);
+                const score = data.score;
+                document.getElementById('scoreText').textContent = score.toFixed(1);
             });
-        }
-
-        function updateStars(sentiment) {
-            const starsElement = document.getElementById('stars');
-            const sentimentText = document.getElementById('sentimentText');
-            const sentimentLabel = document.getElementById('sentimentLabel');
-
-            let starRating = 3; // Neutral by default
-            let sentimentDescription = 'Neutral sentiment.';
-
-            if (sentiment === 'positive') {
-                starRating = 5;
-                sentimentDescription = 'Feeling great!';
-                sentimentText.textContent = 'Positive';
-            } else if (sentiment === 'negative') {
-                starRating = 1;
-                sentimentDescription = 'Feeling down!';
-                sentimentText.textContent = 'Negative';
-            } else {
-                starRating = 3;
-                sentimentText.textContent = 'Neutral';
-            }
-
-            starsElement.innerHTML = '★'.repeat(starRating) + '☆'.repeat(5 - starRating);
-            sentimentLabel.textContent = sentimentDescription;
         }
     </script>
 </body>
 </html>
-

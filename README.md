@@ -56,7 +56,7 @@ We then save the cleaned up dataset as: [`cleaned_data.csv`](DATASETS/cleaned_da
 
 # Text
 
-At this point, we need to deal with the `content` of the review. This is because it often contains unwanted characters, such as punctuation, emojis, and characters repeated many times. To address this, we first **pre-process** the text to clean it up. We then convert the words into numbers through a process called text **vectorisation**. This is because our models work with numerical data, not text.
+At this point, we need to look at the `content` of the review. This is because it often contains unwanted characters, such as punctuation, emoticons, and repeated characters. To address this, we first **pre-process** the text to clean it up. We then convert the words to numbers through a process called text **vectorization**. This is because our models work with numerical data, not text.
 
 ## Text Pre-Processing
 
@@ -64,7 +64,7 @@ The text pre-processing is done in: [`text_preprocessing.ipynb`](TEXT/text_prepr
 
 The pre-processing goes as follows:
 - We load the cleaned dataset: [`cleaned_data.csv`](DATA/cleaned_data.csv).
-- We clean up the text using several techniques (turn the text into lowercase, replace emojis, remove repeated characters) to be ready for vectorization.
+- We clean up the text using several techniques (turn the text into lowercase, replace emoticons, remove repeated characters) to make it ready for vectorization.
 
 The pre-processed dataset is saved as: [`preprocessed_text.csv`](DATASETS/preprocessed_text.csv).
 

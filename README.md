@@ -3,7 +3,7 @@
 There are 3 ways we can treat this problem:
 1. Treat it as a regression problem. So take the ratings, and use minmax normalization to narmalize them. So 5 becomes 1. And 1 becomes 0. Then for the models it becomes a simple regression problem.
 2. Treat it as a classification problem. We can do as we did: 1-2 negative, 3 neutral, 4-5 positive. (We could even test using 5 different classes for each star). Then for the models it becomes a simple classification problem.
-3. Use "ordinal classification". This makes sense. 
+3. Use "ordinal classification". This makes sense. But it's not easy to implement. Like there is no straight forward way to approach this.
 
 **Some stuff to consider**: If our models classify something as 5 stars (positive) but in reality it was 1 star (or negative), that's a big error. But this error doesn't show up in a standard "classification" model. Because each class is treated **indipendently**. On the other hand, in a regression model, if the predicted label was 5 and the true label was 1, the loss function (like RMSE) would be simply, 5-1 = 4. So I guess with a classificaiton loss function we just know if we are "right/wrong" but with a regression loss function we know how much "right/wrong" we are.
 

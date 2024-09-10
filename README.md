@@ -73,8 +73,8 @@ The pre-processed dataset is saved as: [`preprocessed_text.csv`](DATASETS/prepro
 At this point, we are ready to turn our words into numbers. There are many ways to do this. The ones we have explored in this repository are:
 - BoW (Bag of Words): [`bagofwords.ipynb`](TEXT/bagofwords.ipynb)
 - TF-IDF (Term Frequency - Inverse Document Frequency): [`tfidf.ipynb`](TEXT/tfidf.ipynb)
-- Word2Vec (Word 2 Vector)
-- GloVe (Global Vectors)
+- Word2Vec (Word 2 Vector): [`word2vec.ipynb`](TEXT/word2vec.ipynb)
+- GloVe (Global Vectors): [`glove.ipynb`](TEXT/glove.ipynb)
 
 We will give you some general guidelines on which one to choose, and the pros and cons of each.
 

@@ -1,5 +1,9 @@
 **TODO**:
 
+---
+
+**Regression or Classification?**
+
 There are 3 ways we can treat this problem:
 1. Treat it as a regression problem. So take the ratings, and use minmax normalization to narmalize them. So 5 becomes 1. And 1 becomes 0. Then for the models it becomes a simple regression problem.
 2. Treat it as a classification problem. We can do as we did: 1-2 negative, 3 neutral, 4-5 positive. (We could even test using 5 different classes for each star). Then for the models it becomes a simple classification problem.
@@ -10,6 +14,19 @@ There are 3 ways we can treat this problem:
 Something really interesting to read: [StackExchange](https://stats.stackexchange.com/questions/222073/classification-with-ordered-classes)
 
 (Regression seems to be the most reasonable approach).
+
+---
+
+**Dealing with Out-Of-Vocabulary (OOV) Words**
+
+There are two main types of methods to deal with OOV words:
+
+- The first method assumes a closed vocabulary. All the words both in the training and the test sets are known in advance. Depending on the language model settings, any word outside the vocabulary will be discarded or cause an error.This method is used in some applications, like voice control of devices.
+- The open vocabulary makes provisions for new words to occur with a specific symbol, <UNK>, called the unknown token. All the OOV words are mapped to <UNK>, both in the training and test sets.
+
+The vocabulary itsef can come from an external dictionary. It can also be extracted directly from the training set. In this case, it is common to exclude the rare words, notably those seen only once—the hapax legomena. The vocabulary will then consist of the most frequent types of the corpus, for example, the 20,000 most frequent types. The other words, unseen or with a frequency lower than a cutoff value, 1, 2, or up to 5, will be mapped to <UNK>.
+
+---
 
 # Mastering Sentiment-Analysis: A Step-by-Step Guide 
 

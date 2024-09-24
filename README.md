@@ -101,6 +101,8 @@ At this point we have different ways to deal with the text vectorization and man
 
 TODO
 
+- Evaulation: Precision-Recall - F1 score - Macro Average
+
 # Outline
 
 - Why is this important?

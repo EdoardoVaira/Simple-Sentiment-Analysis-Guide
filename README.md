@@ -100,7 +100,9 @@ We will give you some general guidelines on which one to choose, and the pros an
 At this point we have different ways to deal with the text vectorization and many different models we can pick. So we have a lot of possible combinations. I guess we can just show some of them:
 
 - Linear Regression + BoW: [`linear_regression.ipynb`](MODELS/Linear_Regression/Linear_Regression.ipynb)
+- Support Vector Regression + TF-IDF : [`SVR.ipynb`](MODELS/SVR/SVR.ipynb)
 
+  
 TODO
 
 - Evaulation: Precision-Recall - F1 score - Macro Average

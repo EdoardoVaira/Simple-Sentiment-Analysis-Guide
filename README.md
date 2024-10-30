@@ -8,7 +8,7 @@ By the end, you’ll have a clear understanding of sentiment analysis basics and
 
 
 <div align="center">
-	<img src="https://miro.medium.com/v2/1*_JW1JaMpK_fVGld8pd1_JQ.gif" alt="Sentiment Analysis" width="600"/>
+	<img src="https://miro.medium.com/v2/1*_JW1JaMpK_fVGld8pd1_JQ.gif" alt="Sentiment Analysis" width="500"/>
 </div>
 
 
@@ -105,7 +105,7 @@ Finally, we create a basic website, where reviews can be rated from 1 to 5. The 
 
 Here's how the website works:
 
-<div style="text-align: center;">
+<div align="center">
     <img src="WEBSITE/example.gif" alt="Gif" width="500"/>
 </div>
 

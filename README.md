@@ -1,22 +1,3 @@
-**TODO**:
-
----
-
-**Regression or Classification?**
-
-There are 3 ways we can treat this problem:
-1. Treat it as a regression problem. So take the ratings, and use minmax normalization to narmalize them. So 5 becomes 1. And 1 becomes 0. Then for the models it becomes a simple regression problem.
-2. Treat it as a classification problem. We can do as we did: 1-2 negative, 3 neutral, 4-5 positive. (We could even test using 5 different classes for each star). Then for the models it becomes a simple classification problem.
-3. Use "ordinal classification". This makes sense. But it's not easy to implement. Like there is no straight forward way to approach this.
-
-**Some stuff to consider**: If our models classify something as 5 stars (positive) but in reality it was 1 star (or negative), that's a big error. But this error doesn't show up in a standard "classification" model. Because each class is treated **indipendently**. On the other hand, in a regression model, if the predicted label was 5 and the true label was 1, the loss function (like RMSE) would be simply, 5-1 = 4. So I guess with a classificaiton loss function we just know if we are "right/wrong" but with a regression loss function we know how much "right/wrong" we are.
-
-Something really interesting to read: [StackExchange](https://stats.stackexchange.com/questions/222073/classification-with-ordered-classes)
-
-(Regression seems to be the most reasonable approach).
-
----
-
 **Dealing with Out-Of-Vocabulary (OOV) Words**
 
 There are two main types of methods to deal with OOV words:
@@ -30,11 +11,11 @@ The vocabulary itsef can come from an external dictionary. It can also be extrac
 
 # Mastering Sentiment-Analysis: A Step-by-Step Guide 
 
-Ready to learn about Natural Language Processing (NLP) and Sentiment Analysis? This repository is perfect for you. We'll walk you through the whole process, from understanding your data to setting up a sentiment analysis model, in a simple and straightforward way.
+Interested in learning Natural Language Processing (NLP) and Sentiment Analysis? This repository is designed to guide you through each step, from understanding data to setting up a sentiment analysis model.
 
-We'll start with some basic data exploration using user reviews of the Netflix app from the Google Play Store. Then, we'll move on to text pre-processing. You'll learn how to clean and prepare text data, explore different text vectorization methods, and compare various machine learning models—from logistic regression to advanced transformers.
+We'll begin with data exploration using user reviews of the Netflix app from the Google Play Store, followed by text preprocessing. You'll learn how to clean and prepare text data, explore various text vectorization methods, and compare machine learning models, from logistic regression to advanced transformer models.
 
-By the end, you'll not only understand sentiment analysis but also know how to build and deploy your own models. Whether you're new to NLP or looking to brush up on your skills, this guide will help you master sentiment analysis with ease.
+By the end, you’ll have a clear understanding of sentiment analysis basics and hands-on experience building models. Whether you're new to NLP or just refreshing your skills, this guide offers practical insights with straightforward examples.
 
 ![Sentiment_Analysis](https://miro.medium.com/v2/1*_JW1JaMpK_fVGld8pd1_JQ.gif)
 
@@ -57,7 +38,7 @@ The dataset consists of 8 columns:
 | `at`                   | The date and time the review was posted.           |
 | `appVersion`           | The version of the app used when the review was written. |
 
-For our analysis we will focus on two aspects of the reviews. The `content` will be the input to our models and the `score` will be the output.
+For our analysis we will focus on only two aspects of the reviews. The `content` will be the input to our models and the `score` will be the output.
 
 ## Analysis and Visualization
 
@@ -106,7 +87,13 @@ At this point we have different ways to deal with the text vectorization and man
 
 TODO
 
-- Evaulation: Precision-Recall - F1 score - Macro Average
+- Evaulation: Precision-Recall - F1 score - Macro Average (These are useless we are doing regression anyways - I guess?)
+
+# A note on Regression vs. Classification
+
+To predict the sentiment of a review, you can choose between a **classification** or a **regression** approach. For example, we can classify sentiment into categories such as positive, neutral, or negative (classification), or we can predict a continuous score, such as a rating between 0 and 5 (regression). Each approach is valid, but with different implications.
+
+For this project, we chose regression. One reason is that a classification model treats errors independently; if the model predicts a 5-star review as a 1-star, it counts it as "wrong" without capturing the degree of error. In contrast, regression captures this nuance: predicting a 5 when the actual label is 1 results in a larger error (e.g., 5-1 = 4) in the loss function. This way, we can measure not only whether the prediction is correct or incorrect, but also how far off it is, allowing for a more detailed assessment of model performance.
 
 # Outline
 

@@ -6,6 +6,8 @@ We'll begin with data exploration using user reviews of the Netflix app from the
 
 By the end, you’ll have a clear understanding of sentiment analysis basics and hands-on experience building models. Whether you're new to NLP or just refreshing your skills, this guide offers practical insights with straightforward examples.
 
+**Say somewhere here that this is not the biggest and best guide ever made. It's just a simple guide with some examples and ideas.**
+
 ![Sentiment_Analysis](https://miro.medium.com/v2/1*_JW1JaMpK_fVGld8pd1_JQ.gif)
 
 # Data
@@ -97,29 +99,6 @@ To predict the sentiment of a review, you can choose between a **classification*
 
 For this project, we chose regression. One reason is that a classification model treats errors independently; if the model predicts a 5-star review as a 1-star, it counts it as "wrong" without capturing the degree of error. In contrast, regression captures this nuance: predicting a 5 when the actual label is 1 results in a larger error (e.g., 5-1 = 4) in the loss function. This way, we can measure not only whether the prediction is correct or incorrect, but also how far off it is, allowing for a more detailed assessment of model performance.
 
-# Outline
+# Website
 
-- Why is this important?
-  	- Why people should read this thing.
-- What kind of data did we use?
-	- Where did we get it from?
-	- How did we analyze and visualize the data?
-- How did we deal with the Text?
-	- How did we pre-process the text? (Clean up)
-	- How did we turn words into numbers?
-		- Bag-of-Words
-		- TF-IDF
-		- Word2Vec
-		- GloVe
-- What kind of models did we use?
-	- Naive Bayes
-	- SVM
-	- LogisticRegression
-	- RandomForest
-	- XGBoost
-	- LSTM/GRU/MultiHead Attention custom model
-	- Transformers (?)
-	- BERT/ ROBERTA
-- How did we evaluate our model?
-- How can we put our best model into production?
-	- Like having a website. With a text box. And you get as an output the rating of the review. From 1 to 5 stars.
+Finish this. Make the website. Give a link so people can test the models.

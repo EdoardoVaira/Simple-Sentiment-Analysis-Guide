@@ -85,7 +85,7 @@ At this point we have different ways to deal with the text vectorization and man
 - Support Vector Regression + TF-IDF : [`SVR.ipynb`](MODELS/SVR/SVR.ipynb)
 - Random Forest Regression + Word2Vec CBoW : [`random_forest.ipynb`](MODELS/Random_Forest/random_forest.ipynb)
 - XGBoost Regression + GloVe Twitter : [`xgboost.ipynb`](MODELS/XGBoost/xgboost.ipynb)  
-- Transformer Regression : [`transformers.ipynb`](MODELS/Transformer/transformers.ipynb)
+- Transformer Regression : [`transformer.ipynb`](MODELS/Transformer/transformer.ipynb)
   
 ### A note on Regression vs. Classification
 

@@ -110,4 +110,4 @@ Below you can see how it looks:
 
 # Conclusion
 
-Leave a star if you found this guide usefull 😃
+We hope you found this guide helpful in understanding the fundamentals of sentiment analysis using NLP. If you enjoyed this project, please consider leaving a star on the repository. Happy coding! 😃

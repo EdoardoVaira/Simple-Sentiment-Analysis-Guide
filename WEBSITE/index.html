@@ -27,12 +27,15 @@
         }
         textarea {
             width: 100%;
-            height: 150px;
+            max-width: 100%;
+            height: 120px;
             padding: 10px;
             border: 1px solid #ddd;
             border-radius: 4px;
             margin-bottom: 10px;
             font-size: 16px;
+            box-sizing: border-box;
+            resize: none;
         }
         button {
             padding: 10px 20px;
@@ -51,6 +54,31 @@
             margin-top: 20px;
             font-size: 24px;
         }
+        .stars {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0; /* Space above and below the stars */
+        }
+        .star {
+            font-size: 40px; /* Increased size for stars */
+            color: #ccc;
+            margin: 0 2px;
+            position: relative;
+        }
+        .star.filled {
+            color: #ffcc00; /* Gold color for filled stars */
+        }
+        .star.partial::after {
+            content: '★';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            color: #ffcc00; /* Color for the partial star */
+            width: calc(100% * var(--percent));
+        }
     </style>
 </head>
 <body>
@@ -58,7 +86,16 @@
         <h1>Sentiment Analysis</h1>
         <textarea id="textInput" placeholder="Enter text here..."></textarea><br>
         <button onclick="analyzeText()">Analyze</button>
-        <div id="result" class="result">Score: <span id="scoreText">0</span></div>
+        <div class="stars" id="starsContainer">
+            <span class="star" id="star1">★</span>
+            <span class="star" id="star2">★</span>
+            <span class="star" id="star3">★</span>
+            <span class="star" id="star4">★</span>
+            <span class="star" id="star5">★</span>
+        </div>
+        <div id="result" class="result">
+            Score: <span id="scoreText">0</span>
+        </div>
     </div>
 
     <script>
@@ -73,6 +110,23 @@
             .then(data => {
                 const score = data.score;
                 document.getElementById('scoreText').textContent = score.toFixed(1);
+                updateStars(score);
+            });
+        }
+
+        function updateStars(score) {
+            const stars = document.querySelectorAll('.star');
+            const fullStars = Math.floor(score);
+            const partialStar = score - fullStars;
+
+            stars.forEach((star, index) => {
+                star.classList.remove('filled', 'partial');
+                if (index < fullStars) {
+                    star.classList.add('filled');
+                } else if (index === fullStars && partialStar > 0) {
+                    star.classList.add('partial');
+                    star.style.setProperty('--percent', partialStar);
+                }
             });
         }
     </script>

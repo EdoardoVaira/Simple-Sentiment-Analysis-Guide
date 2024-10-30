@@ -67,14 +67,14 @@ We will give you some general guidelines on which one to choose, and the pros an
 
 ### A note on how to deal with Out-Of-Vocabulary (OOV) Words
 
-Out-of-vocabulary (OOV) words are basically any terms that aren't in the model's predefined vocabulary. They're usually words the model hasn't seen in the training data, which can make it tricky to understand or process new inputs.
+Out-of-vocabulary (OOV) words are any terms that aren't in the model's predefined vocabulary. They're usually words the model hasn't seen in the training data, which can make it tricky to understand or process new inputs.
 
 There are two main ways to manage OOV words:
 
 - In a **closed vocabulary** approach, all words in the training and test sets are predefined. Any word outside the known vocabulary is either discarded or raises an error, depending on the language model settings.
 - In the **open vocabulary** approach, the model uses a special symbol, <UNK> (unknown token), to handle OOV words. Both the training set and the test set map any unknown word to <UNK> so the model can process new or rare words without errors.
 
-In this project, we're just going to ignore any words that aren't in the dictionary (OOV).
+In this project, we're going to ignore any words that aren't in the dictionary (OOV).
 
 
 # Picking a Model

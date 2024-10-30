@@ -10,6 +10,8 @@ By the end, you’ll have a clear understanding of sentiment analysis basics and
 
 Gif Example here
 
+![TESTING](WEBSITE/example.gif)
+
 # Data
 
 ## Dataset

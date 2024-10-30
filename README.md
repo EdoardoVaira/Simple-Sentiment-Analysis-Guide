@@ -91,7 +91,7 @@ TODO
 
 - Evaulation: Precision-Recall - F1 score - Macro Average (These are useless we are doing regression anyways - I guess?)
 
-## A note on Regression vs. Classification
+### A note on Regression vs. Classification
 
 To predict the sentiment of a review, you can choose between a **classification** or a **regression** approach. For example, we can classify sentiment into categories such as positive, neutral, or negative (classification), or we can predict a continuous score, such as a rating between 0 and 5 (regression). Each approach is valid, but with different implications.
 

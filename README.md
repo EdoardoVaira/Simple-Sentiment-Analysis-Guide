@@ -8,6 +8,8 @@ By the end, you’ll have a clear understanding of sentiment analysis basics and
 
 ![Sentiment_Analysis](https://miro.medium.com/v2/1*_JW1JaMpK_fVGld8pd1_JQ.gif)
 
+Gif Example here
+
 # Data
 
 ## Dataset

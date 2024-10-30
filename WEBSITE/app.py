@@ -58,7 +58,7 @@ def text_cleaner(text):
     return text
 
 # Load the tokenizer
-tokenizer = joblib.load('tokenizer.pkl')  # Load the tokenizer
+tokenizer = joblib.load('tokenizer.pkl') 
 
 # Define or import the model architecture
 class Embedding(nn.Module):

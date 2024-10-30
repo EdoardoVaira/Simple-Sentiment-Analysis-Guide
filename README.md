@@ -1,14 +1,3 @@
-**Dealing with Out-Of-Vocabulary (OOV) Words**
-
-There are two main types of methods to deal with OOV words:
-
-- The first method assumes a closed vocabulary. All the words both in the training and the test sets are known in advance. Depending on the language model settings, any word outside the vocabulary will be discarded or cause an error.This method is used in some applications, like voice control of devices.
-- The open vocabulary makes provisions for new words to occur with a specific symbol, <UNK>, called the unknown token. All the OOV words are mapped to <UNK>, both in the training and test sets.
-
-The vocabulary itsef can come from an external dictionary. It can also be extracted directly from the training set. In this case, it is common to exclude the rare words, notably those seen only once—the hapax legomena. The vocabulary will then consist of the most frequent types of the corpus, for example, the 20,000 most frequent types. The other words, unseen or with a frequency lower than a cutoff value, 1, 2, or up to 5, will be mapped to <UNK>.
-
----
-
 # Mastering Sentiment-Analysis: A Step-by-Step Guide 
 
 Interested in learning Natural Language Processing (NLP) and Sentiment Analysis? This repository is designed to guide you through each step, from understanding data to setting up a sentiment analysis model.
@@ -76,9 +65,21 @@ At this point, we are ready to turn our words into numbers. There are many ways 
 
 We will give you some general guidelines on which one to choose, and the pros and cons of each.
 
+### A note on how to deal with Out-Of-Vocabulary (OOV) Words
+
+Out-of-vocabulary (OOV) words are basically any terms that aren't in the model's predefined vocabulary. They're usually words the model hasn't seen in the training data, which can make it tricky to understand or process new inputs.
+
+There are two main ways to manage OOV words:
+
+- In a **closed vocabulary** approach, all words in the training and test sets are predefined. Any word outside the known vocabulary is either discarded or raises an error, depending on the language model settings.
+- In the **open vocabulary** approach, the model uses a special symbol, <UNK> (unknown token), to handle OOV words. Both the training set and the test set map any unknown word to <UNK> so the model can process new or rare words without errors.
+
+In this project, we're just going to ignore any words that aren't in the dictionary (OOV).
+
+
 # Picking a Model
 
-At this point we have different ways to deal with the text vectorization and many different models we can pick. So we have a lot of possible combinations. I guess we can just show some of them:
+At this point we have different ways to deal with the text vectorization and many different models we can pick. So we have a lot of possible combinations - for this project, we will give you some possible models so you can see how you can combine different text vectorization techniques and different models.
 
 - Linear Regression + BoW: [`linear_regression.ipynb`](MODELS/Linear_Regression/Linear_Regression.ipynb)
 - Support Vector Regression + TF-IDF : [`SVR.ipynb`](MODELS/SVR/SVR.ipynb)
@@ -90,7 +91,7 @@ TODO
 
 - Evaulation: Precision-Recall - F1 score - Macro Average (These are useless we are doing regression anyways - I guess?)
 
-# A note on Regression vs. Classification
+## A note on Regression vs. Classification
 
 To predict the sentiment of a review, you can choose between a **classification** or a **regression** approach. For example, we can classify sentiment into categories such as positive, neutral, or negative (classification), or we can predict a continuous score, such as a rating between 0 and 5 (regression). Each approach is valid, but with different implications.
 

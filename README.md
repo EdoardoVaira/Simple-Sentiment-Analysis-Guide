@@ -74,7 +74,7 @@ There are two main ways to manage OOV words:
 - In a **closed vocabulary** approach, all words in the training and test sets are predefined. Any word outside the known vocabulary is either discarded or raises an error, depending on the language model settings.
 - In the **open vocabulary** approach, the model uses a special symbol, <UNK> (unknown token), to handle OOV words. Both the training set and the test set map any unknown word to <UNK> so the model can process new or rare words without errors.
 
-In this project, we're going to ignore any words that aren't in the dictionary (OOV).
+For this project, we’re following a closed vocabulary approach and will ignore any words that aren't in the vocabulary.
 
 
 # Picking a Model

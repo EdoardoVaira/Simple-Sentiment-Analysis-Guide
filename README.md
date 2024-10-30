@@ -1,4 +1,4 @@
-# Sentiment-Analysis: A Step-by-Step Guide 
+# Simple Sentiment-Analysis: A Step-by-Step Guide 
 
 Interested in learning Natural Language Processing (NLP) and Sentiment Analysis? This repository is designed to guide you through each step, from understanding data to setting up a sentiment analysis model.
 

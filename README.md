@@ -82,9 +82,10 @@ At this point we have different ways to deal with the text vectorization and man
 
 - Linear Regression + BoW: [`linear_regression.ipynb`](MODELS/Linear_Regression/Linear_Regression.ipynb)
 - Support Vector Regression + TF-IDF : [`SVR.ipynb`](MODELS/SVR/SVR.ipynb)
-- Random Forest Regression + Word2Vec CBoW : ['random_forest.ipynb'](MODELS/Random_Forest/random_forest.ipynb)
-- XGBoost Regression + GloVe Twitter : ['xgboost.ipynb'](MODELS/XGBoost/xgboost.ipynb)  
-
+- Random Forest Regression + Word2Vec CBoW : [`random_forest.ipynb`](MODELS/Random_Forest/random_forest.ipynb)
+- XGBoost Regression + GloVe Twitter : [`xgboost.ipynb`](MODELS/XGBoost/xgboost.ipynb)  
+- Transformer Regression : [`transformers.ipynb`](MODELS/Transformer/transformers.ipynb)
+  
 TODO
 
 - Evaulation: Precision-Recall - F1 score - Macro Average (These are useless we are doing regression anyways - I guess?)

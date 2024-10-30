@@ -6,9 +6,8 @@ import torch
 app = Flask(__name__)
 
 # Load the model and scalers
-model = torch.load('model.pth')
-vectorizer = joblib.load('vectorizer.pkl')
-scaler = joblib.load('minmax_scaler.pkl')  # minmax_scaler replaces maxabs_scaler
+model = torch.load('model.pth', map_location=torch.device('cpu'))
+scaler = joblib.load('minmax_scaler.pkl')  # Load only the minmax scaler
 
 @app.route('/')
 def index():
@@ -21,9 +20,12 @@ def analyze_text():
     if not data:
         return jsonify({'error': 'No text provided'}), 400
     
-    # Vectorize and scale the input text
-    X_new_bow = vectorizer.transform([data])
-    X_new_scaled = scaler.transform(X_new_bow)
+    # Directly transform the input text if it no longer needs vectorization
+    # Ensure the data is in a format that `scaler` can process
+    # For example, if `data` needs to be numeric, pre-process it accordingly
+
+    # Scale the input text if needed for your specific input requirements
+    X_new_scaled = scaler.transform([[float(data)]])  # Example assuming `data` is numeric
     
     # Convert to torch tensor for model input
     X_new_tensor = torch.tensor(X_new_scaled, dtype=torch.float32)

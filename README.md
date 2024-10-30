@@ -1,12 +1,10 @@
-# Mastering Sentiment-Analysis: A Step-by-Step Guide 
+# Sentiment-Analysis: A Step-by-Step Guide 
 
 Interested in learning Natural Language Processing (NLP) and Sentiment Analysis? This repository is designed to guide you through each step, from understanding data to setting up a sentiment analysis model.
 
-We'll begin with data exploration using user reviews of the Netflix app from the Google Play Store, followed by text preprocessing. You'll learn how to clean and prepare text data, explore various text vectorization methods, and compare machine learning models, from logistic regression to advanced transformer models.
+We'll begin with data exploration using user reviews of the Netflix app from the Google Play Store, followed by text preprocessing. You'll learn how to clean and prepare text data, explore various text vectorization methods, and compare machine learning models, from logistic regression to advanced transformer models. Finally, we will pick the best model and create a simple website, where users reviews can be rated from 1 to 5.
 
 By the end, you’ll have a clear understanding of sentiment analysis basics and hands-on experience building models. Whether you're new to NLP or just refreshing your skills, this guide offers practical insights with straightforward examples.
-
-**Say somewhere here that this is not the biggest and best guide ever made. It's just a simple guide with some examples and ideas.**
 
 ![Sentiment_Analysis](https://miro.medium.com/v2/1*_JW1JaMpK_fVGld8pd1_JQ.gif)
 
@@ -89,10 +87,6 @@ At this point we have different ways to deal with the text vectorization and man
 - XGBoost Regression + GloVe Twitter : [`xgboost.ipynb`](MODELS/XGBoost/xgboost.ipynb)  
 - Transformer Regression : [`transformers.ipynb`](MODELS/Transformer/transformers.ipynb)
   
-TODO
-
-- Evaulation: Precision-Recall - F1 score - Macro Average (These are useless we are doing regression anyways - I guess?)
-
 ### A note on Regression vs. Classification
 
 To predict the sentiment of a review, you can choose between a **classification** or a **regression** approach. For example, we can classify sentiment into categories such as positive, neutral, or negative (classification), or we can predict a continuous score, such as a rating between 0 and 5 (regression). Each approach is valid, but with different implications.

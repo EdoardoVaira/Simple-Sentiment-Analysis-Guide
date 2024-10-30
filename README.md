@@ -6,7 +6,10 @@ We'll begin with data exploration using user reviews of the Netflix app from the
 
 By the end, you’ll have a clear understanding of sentiment analysis basics and hands-on experience building models. Whether you're new to NLP or just refreshing your skills, this guide offers practical insights with straightforward examples.
 
-![Sentiment_Analysis](https://miro.medium.com/v2/1*_JW1JaMpK_fVGld8pd1_JQ.gif)
+<div style="text-align: center;">
+    <img src="https://miro.medium.com/v2/1*_JW1JaMpK_fVGld8pd1_JQ.gif" alt="Sentiment Analysis" width="400"/>
+</div>
+
 
 # Data
 
@@ -100,4 +103,7 @@ Finally, we create a basic website, where reviews can be rated from 1 to 5. The 
 
 Here's how the website works:
 
-<img src="WEBSITE/example.gif" alt="Gif" width="400"/>
+<div style="text-align: center;">
+    <img src="WEBSITE/example.gif" alt="Gif" width="500"/>
+</div>
+

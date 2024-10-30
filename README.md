@@ -95,4 +95,4 @@ For this project, we chose regression. One reason is that a classification model
 
 # Website
 
-Finally, we create a basic website, where reviews can be rated from 1 to 5. The app utilizes the transformer model, since it was the one that gave the best performance. The code for the app can be found here: [`app.py`](WEBSITE/app.py). The website is accessible in this link: **PLACEHOLDER** 
+Finally, we create a basic website, where reviews can be rated from 1 to 5. The app utilizes the transformer model, since it was the one that gave the best performance. The code for the app can be found here: [`app.py`](WEBSITE/app.py). The website is accessible in this link: **PLACEHOLDER**  ehehxd

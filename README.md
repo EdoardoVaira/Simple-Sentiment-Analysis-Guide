@@ -99,6 +99,6 @@ To predict the sentiment of a review, you can choose between a **classification*
 
 For this project, we chose regression. One reason is that a classification model treats errors independently; if the model predicts a 5-star review as a 1-star, it counts it as "wrong" without capturing the degree of error. In contrast, regression captures this nuance: predicting a 5 when the actual label is 1 results in a larger error (e.g., 5-1 = 4) in the loss function. This way, we can measure not only whether the prediction is correct or incorrect, but also how far off it is, allowing for a more detailed assessment of model performance.
 
-# Website
+# Website
 
 Finish this. Make the website. Give a link so people can test the models.
